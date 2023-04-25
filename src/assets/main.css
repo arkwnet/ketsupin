@@ -1,35 +1,50 @@
-@import './base.css';
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
+.wrapper {
+  width: 1000px;
+  margin: auto;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+.header {
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #00a0e9;
+  text-shadow: 2px 2px 0 #212121;
+  text-align: center;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+.main {
+  margin: 20px 0;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+.main .control,
+.main .input,
+.main .output {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.main .input img {
+  width: 800px;
+  height: 450px;
+}
+
+.main .output img {
+  width: 660px;
+  height: 450px;
+}
+
+.main .canvas {
+  display: none;
+}
+
+.footer {
+  padding: 20px 0;
+  color: #757575;
+  text-align: center;
 }
