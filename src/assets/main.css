@@ -1,6 +1,19 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.center {
+  text-align: center;
 }
 
 .wrapper {
@@ -10,12 +23,21 @@
 
 .header {
   padding: 20px;
-  font-size: 24px;
-  font-weight: bold;
   color: #fff;
   background-color: #00a0e9;
-  text-shadow: 2px 2px 0 #212121;
   text-align: center;
+}
+
+.header h1 {
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 2px 2px 0 #212121;
+}
+
+.header h2 {
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 2px 2px 0 #212121;
 }
 
 .main {
@@ -47,4 +69,8 @@
   padding: 20px 0;
   color: #757575;
   text-align: center;
+}
+
+.footer a {
+  color: #757575;
 }

@@ -1,7 +1,10 @@
 <template>
   <div>
     <div class="header">
-      <div class="wrapper">ケツピンカッター</div>
+      <div class="wrapper">
+        <h1>ケツピンカッター</h1>
+        <h2>ケツピン画像の両端をカットする反SDGsアプリ</h2>
+      </div>
     </div>
     <div class="main">
       <div class="wrapper">
@@ -9,13 +12,21 @@
           画像ファイルを選択：<input class="file" type="file" ref="file" @change="load" />
         </div>
         <div class="input"><img :src="imageInputUrl" /></div>
+        <p class="center"><img src="./assets/arrow.png" /></p>
         <div class="output"><img :src="imageOutputUrl" /></div>
       </div>
       <canvas class="canvas" ref="canvasInput" width="1600" height="900"></canvas>
       <canvas class="canvas" ref="canvasOutput" width="1320" height="900"></canvas>
     </div>
     <div class="footer">
-      <div class="wrapper">Copyright (c) 2023 Sora Arakawa<br />Licensed under the MIT License</div>
+      <div class="wrapper">
+        <p><img src="./assets/sdgs.png" width="150" /></p>
+        <p>
+          Copyright (c) 2023 <a href="https://arkw.net/">Sora Arakawa</a><br />Licensed under the
+          MIT License
+        </p>
+        <p><a href="https://github.com/arkwnet/ketsupin">GitHub Repository</a></p>
+      </div>
     </div>
   </div>
 </template>
