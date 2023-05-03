@@ -14,9 +14,12 @@
         <div class="input"><img :src="imageInputUrl" /></div>
         <p class="center"><img src="./assets/arrow.png" /></p>
         <div class="output"><img :src="imageOutputUrl" /></div>
+        <canvas class="canvas" ref="canvasInput" width="1600" height="900"></canvas>
+        <canvas class="canvas" ref="canvasOutput" width="1320" height="900"></canvas>
+        <p class="center">
+          右クリックメニュー「名前を付けて画像を保存」またはロングタップで保存できます。
+        </p>
       </div>
-      <canvas class="canvas" ref="canvasInput" width="1600" height="900"></canvas>
-      <canvas class="canvas" ref="canvasOutput" width="1320" height="900"></canvas>
     </div>
     <div class="footer">
       <div class="wrapper">
