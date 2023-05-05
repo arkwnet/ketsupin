@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "vue": "^3.2.47",
-    "vue-gtag": "^2.0.1"
+    "vue-google-adsense": "^2.0.0",
+    "vue-gtag": "^2.0.1",
+    "vue-scriptx": "^0.2.5"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.2.0",

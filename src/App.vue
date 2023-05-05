@@ -21,6 +21,9 @@
         </p>
       </div>
     </div>
+    <p>
+      <Adsense :data-ad-client="adClient" :data-ad-slot="adSlot"> </Adsense>
+    </p>
     <div class="footer">
       <div class="wrapper">
         <p><img src="./assets/sdgs.png" width="128" /></p>
@@ -45,7 +48,9 @@ export default {
       canvasInput: null,
       contextInput: null,
       canvasOutput: null,
-      contextOutput: null
+      contextOutput: null,
+      adClient: import.meta.env.VITE_AD_CLIENT,
+      adSlot: import.meta.env.VITE_AD_SLOT
     }
   },
   mounted() {
