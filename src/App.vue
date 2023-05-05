@@ -23,7 +23,7 @@
     </div>
     <div class="footer">
       <div class="wrapper">
-        <p><img src="./assets/sdgs.png" width="150" /></p>
+        <p><img src="./assets/sdgs.png" width="128" /></p>
         <p>
           Copyright (c) 2023 <a href="https://arkw.net/">Sora Arakawa</a><br />Licensed under the
           MIT License
