@@ -21,9 +21,10 @@
         </p>
       </div>
     </div>
-    <p>
+    <br />
+    <div class="wrapper">
       <Adsense :data-ad-client="adClient" :data-ad-slot="adSlot"> </Adsense>
-    </p>
+    </div>
     <div class="footer">
       <div class="wrapper">
         <p><img src="./assets/sdgs.png" width="128" /></p>
@@ -43,8 +44,8 @@ export default {
   data() {
     return {
       imageInput: new Image(),
-      imageInputUrl: '/img/input.png',
-      imageOutputUrl: '/img/output.png',
+      imageInputUrl: import.meta.env.BASE_URL + 'img/input.png',
+      imageOutputUrl: import.meta.env.BASE_URL + 'img/output.png',
       canvasInput: null,
       contextInput: null,
       canvasOutput: null,
