@@ -28,6 +28,7 @@
     <div class="footer">
       <div class="wrapper">
         <p><img src="./assets/sdgs.png" width="128" /></p>
+        <p>Version {{ version }}</p>
         <p>
           Copyright (c) 2023 <a href="https://arkw.net/">Sora Arakawa</a><br />Licensed under the
           MIT License
@@ -51,10 +52,12 @@ export default {
       canvasOutput: null,
       contextOutput: null,
       adClient: import.meta.env.VITE_AD_CLIENT,
-      adSlot: import.meta.env.VITE_AD_SLOT
+      adSlot: import.meta.env.VITE_AD_SLOT,
+      version: import.meta.env.PACKAGE_VERSION
     }
   },
   mounted() {
+    this.$gtag.pageview('/')
     this.canvasInput = this.$refs.canvasInput
     this.contextInput = this.canvasInput.getContext('2d')
     this.canvasOutput = this.$refs.canvasOutput

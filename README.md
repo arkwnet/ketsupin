@@ -1,6 +1,4 @@
-# ketsupin
-
-This template should help get you started developing with Vue 3 in Vite.
+# ケツピンカッター (Ketsupin Cutter)
 
 ## Recommended IDE Setup
 
@@ -33,3 +31,16 @@ npm run build
 ```sh
 npm run lint
 ```
+
+## `.env` File Template
+
+```
+VITE_GTAG_ID="Google Tag ID, Connection to GA4 required"
+VITE_AD_CLIENT="Google AdSense Publisher ID (ex: ca-pub-XXXXXXXXXXXXXXXX)"
+VITE_AD_SLOT="Google AdSense Unit ID (ex: XXXXXXXXXX)"
+```
+
+## License
+
+Licensed under the MIT License  
+Copyright (C) 2023 Sora Arakawa
